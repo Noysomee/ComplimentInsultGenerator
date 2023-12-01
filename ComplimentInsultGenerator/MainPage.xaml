@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="ComplimentInsultGenerator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ComplimentInsultGenerator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#ffca7b" Height="789" Width="1047">
+    <Grid>
+        <TextBlock x:Name="Textblock" Margin="207,74,207,459" RenderTransformOrigin="0,0" TextWrapping="Wrap" TextAlignment="Center" Foreground="Black" FontSize="36"></TextBlock>
+        <Button x:Name="GenerateButton" Content="GENERATE" Click="GenerateButton_Click"  Height="142" Width="328" HorizontalAlignment="Center" Margin="0,425,0,0" VerticalAlignment="Top" FontSize="48" Background="#FFFF7251" FocusVisualPrimaryBrush="Transparent" FocusVisualSecondaryBrush="Transparent" FontFamily="Impact" Foreground="White"></Button>
+        <Button x:Name="ComplimentInsultButton" Content="COMPLIMENTS" Margin="0,640,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Height="69" Width="328" Background="#FFFF7251" FontFamily="Impact" FontSize="48"></Button>
+    </Grid>
+</Page>
