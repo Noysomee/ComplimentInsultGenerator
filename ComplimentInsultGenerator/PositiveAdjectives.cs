@@ -9,6 +9,7 @@ namespace Insult_Generator_Thing
 {
     public class PositiveAdjectives
     {
+        //ArrayList posadjectives created full of positive adjectives for use in app
         ArrayList posadjectives = new ArrayList()
         {"wonderful",
          "amazing",
@@ -41,8 +42,13 @@ namespace Insult_Generator_Thing
          "nice",
          "illustrious"};
 
+        /// <summary>
+        /// Method that returns randomly selected adjective from the posadjectives arraylist
+        /// </summary>
+        /// <returns></returns>
         public string PositiveAdjGen()
         {
+            //returns the randomly selected element from the posadjectives arraylist using the random function
             return posadjectives[new Random().Next(posadjectives.Count)] as string;
         }
     }

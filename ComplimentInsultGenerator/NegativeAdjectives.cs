@@ -10,6 +10,7 @@ namespace Insult_Generator_Thing
 {
     internal class NegativeAdjectives
     {
+        //ArrayList negadjectives created full of negative adjectives for use in app
         ArrayList negadjectives = new ArrayList()
         {"abhorrent",
           "belligerent",
@@ -44,8 +45,13 @@ namespace Insult_Generator_Thing
           "cringe"
         };
 
+        /// <summary>
+        /// Method that returns randomly selected adjective from the negadjectives arraylist
+        /// </summary>
+        /// <returns></returns>
         public string NegativeAdjGen()
         {
+            //returns the randomly selected element from the negadjectives arraylist using the random function
             return negadjectives[new Random().Next(negadjectives.Count)] as string;
         }
     }

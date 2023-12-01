@@ -9,6 +9,7 @@ namespace Insult_Generator_Thing
 {
     internal class BodyParts
     {
+        //ArrayList bodyparts created full of body parts for use in app
         ArrayList bodyparts = new ArrayList()
         {
             "arm",
@@ -44,8 +45,13 @@ namespace Insult_Generator_Thing
             "navel"
         };
 
+        /// <summary>
+        /// Method that returns randomly selected body part from the bodyparts arraylist
+        /// </summary>
+        /// <returns></returns>
         public string BodyPartGenerator()
         {
+            //returns the randomly selected element from the bodyparts arraylist using the random function
             return bodyparts[new Random().Next(bodyparts.Count)] as string;
         }
     }
