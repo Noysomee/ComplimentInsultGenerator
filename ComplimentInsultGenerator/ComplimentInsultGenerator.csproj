@@ -121,6 +121,9 @@
     </Compile>
     <Compile Include="BodyParts.cs" />
     <Compile Include="Compliments.cs" />
+    <Compile Include="InsultPage.xaml.cs">
+      <DependentUpon>InsultPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Insults.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -149,6 +152,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="InsultPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
