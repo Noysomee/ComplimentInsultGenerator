@@ -1,12 +1,13 @@
 ﻿<Page
-    x:Class="ComplimentInsultGenerator.MainPage"
+    x:Class="ComplimentInsultGenerator.InsultPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:ComplimentInsultGenerator"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="#ffca7b" Height="789" Width="1047">
+    Background="#292018" Height="789" Width="1047">
+
     <Grid>
         <TextBlock 
             x:Name="Textblock" 
@@ -14,19 +15,20 @@
             RenderTransformOrigin="0,0" 
             TextWrapping="Wrap" 
             TextAlignment="Center" 
-            Foreground="Black" 
+            Foreground="White" 
             FontSize="36">
         </TextBlock>
-        
+
         <Button 
-            x:Name="GenerateComplimentButton" 
+            x:Name="GenerateInsultButton" 
             Content="GENERATE" 
-            Click="GenerateComplimentButton_Click"  
-            Height="142" Width="328" HorizontalAlignment="Center" 
+            Click="GenerateInsultButton_Click"  
+            Height="142" Width="328" 
+            HorizontalAlignment="Center" 
             Margin="0,425,0,0" 
             VerticalAlignment="Top" 
             FontSize="48" 
-            Background="#FFFF7251" 
+            Background="#FF512227" 
             FocusVisualPrimaryBrush="Transparent" 
             FocusVisualSecondaryBrush="Transparent" 
             FontFamily="Impact" 
@@ -34,17 +36,17 @@
         </Button>
 
         <HyperlinkButton 
-            x:Name="ComplimentButton" 
-            Content="COMPLIMENTS" 
-            Click="ComplimentInsultButton_Click" 
+            x:Name="InsultButton" 
+            Content="Insults" 
+            Click="InsultButton_Click" 
             Margin="0,640,0,0" 
             VerticalAlignment="Top" 
             HorizontalAlignment="Center" 
             Height="69" Width="328" 
-            Background="#FFFF7251" 
+            Background="#FF512227" 
             FontFamily="Impact" 
             FontSize="48" 
-            Foreground="White" >
+            Foreground="White">
         </HyperlinkButton>
     </Grid>
 </Page>
