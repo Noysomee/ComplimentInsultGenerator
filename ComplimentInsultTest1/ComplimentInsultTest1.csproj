@@ -148,13 +148,13 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\ComplimentInsultGenerator\ComplimentInsultGenerator.csproj">
       <Project>{05ef9530-ba47-4aa3-a2ce-736e7bae6389}</Project>
       <Name>ComplimentInsultGenerator</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
