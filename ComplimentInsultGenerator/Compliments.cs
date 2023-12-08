@@ -51,12 +51,5 @@ namespace Insult_Generator_Thing
             //returns generated insult out of method
             return compliment;
         }
-        public string UserComplimentGenerator()
-        {
-            //Uses random to select a random element (within the range of the array) in the compliments arraylist and assign it to the variable compliment
-            string usercompliment = compliments[new Random().Next(compliments.Count)] as string;
-
-            return "";
-        }
     }
 }
