@@ -4,7 +4,7 @@ namespace ComplimentInsultTest
     public class BodyPartsTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void BodyPartsTest1()
         {
             
         }
