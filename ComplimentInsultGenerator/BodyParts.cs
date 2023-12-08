@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace Insult_Generator_Thing
 {
-    internal class BodyParts
+    public class BodyParts
     {
         //ArrayList bodyparts created full of body parts for use in app
         ArrayList bodyparts = new ArrayList()

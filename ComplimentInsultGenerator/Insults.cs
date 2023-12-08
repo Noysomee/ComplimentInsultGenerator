@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace Insult_Generator_Thing
 {
-    internal class Insults
+    public class Insults
     {
         //ArrayList insults created full of structure insults for use in app
         ArrayList insults = new ArrayList()

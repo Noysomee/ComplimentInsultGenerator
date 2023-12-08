@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace Insult_Generator_Thing
 {
-    internal class NegativeAdjectives
+    public class NegativeAdjectives
     {
         //ArrayList negadjectives created full of negative adjectives for use in app
         ArrayList negadjectives = new ArrayList()
