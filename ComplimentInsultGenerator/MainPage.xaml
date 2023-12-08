@@ -8,6 +8,7 @@
     mc:Ignorable="d"
     Background="#ffca7b" Height="789" Width="1047">
     <Grid>
+        <!-- TextBlock for containing the generated compliment -->
         <TextBlock 
             x:Name="Textblock" 
             Margin="207,74,207,459" 
@@ -18,6 +19,7 @@
             FontSize="36">
         </TextBlock>
         
+        <!-- Button which generates compliment when clicked -->
         <Button 
             x:Name="GenerateComplimentButton" 
             Content="GENERATE" 
@@ -33,6 +35,7 @@
             Foreground="White">
         </Button>
 
+        <!-- HyperlinkButton which changes page to InsultPage when clicked -->
         <HyperlinkButton 
             x:Name="ComplimentButton" 
             Content="COMPLIMENTS" 

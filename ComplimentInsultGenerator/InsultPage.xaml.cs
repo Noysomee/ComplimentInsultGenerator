@@ -1,18 +1,6 @@
 ﻿using Insult_Generator_Thing;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -24,13 +12,26 @@ namespace ComplimentInsultGenerator
         {
             this.InitializeComponent();
         }
+        /// <summary>
+        /// Method that sets the textblock text to the insult returned from the InsultGenerator method
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void GenerateInsultButton_Click(object sender, RoutedEventArgs e)
         {
+            //Creates insult object in InsultPage.xaml.cs
             Insults insult = new Insults();
+            //Assigns the TextBlock's text to the output of the InsultGenerator method
             Textblock.Text = insult.InsultGenerator();
         }
+        /// <summary>
+        /// Method that sends the user to the MainPage
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void InsultButton_Click(object sender, RoutedEventArgs e)
         {
+            //Changes page from the InsultPage to the MainPage
             Frame.Navigate(typeof(MainPage));
         }
     }

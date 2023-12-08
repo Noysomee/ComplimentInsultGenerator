@@ -9,6 +9,7 @@
     Background="#292018" Height="789" Width="1047">
 
     <Grid>
+        <!-- TextBlock for containing the generated insult -->
         <TextBlock 
             x:Name="Textblock" 
             Margin="207,74,207,459" 
@@ -19,6 +20,7 @@
             FontSize="36">
         </TextBlock>
 
+        <!-- Button which generates insult when clicked -->
         <Button 
             x:Name="GenerateInsultButton" 
             Content="GENERATE" 
@@ -35,6 +37,7 @@
             Foreground="White">
         </Button>
 
+        <!-- HyperlinkButton which changes page to MainPage when clicked -->
         <HyperlinkButton 
             x:Name="InsultButton" 
             Content="Insults" 
